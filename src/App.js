@@ -1,14 +1,16 @@
-import './App.css';
-import Extension from './components/extension';
-import MyComponent from './components/MyComponent'
-
+import logo from "./logo.svg";
+import "./App.css";
+import Posts from "./components/Posts";
 
 function App() {
   return (
     <div className="App">
-    <h1>Counting Plus Minus click</h1>
-{/* <Extension></Extension> */}
-<MyComponent></MyComponent>
+      <header className="App-header">
+        <h1 className="center">Dashboard</h1>
+        <div>
+          <Posts></Posts>
+        </div>
+      </header>
     </div>
   );
 }

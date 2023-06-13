@@ -1,0 +1,18 @@
+.post {
+    padding: 20px;
+    background-color: aliceblue;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    border-radius: 8px;
+    width: 220px;
+    height: 150px;
+}
+
+.center{
+    text-align: center;
+}
+.posts-container{
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+}
