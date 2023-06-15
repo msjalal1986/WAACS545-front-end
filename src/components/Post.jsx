@@ -1,7 +1,10 @@
 import "./Post.css";
 import {Link} from 'react-router-dom'
+import { SelectedPostContext } from "../context/postContext";
 
 const Post = (props) => {
+  const { selectedPost, setSelectedPost } = useContext(SelectedPostContext);
+ 
   return (
     <>
     <div className="post">
