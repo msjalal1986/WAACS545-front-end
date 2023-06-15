@@ -1,12 +1,9 @@
 import { useContext, useEffect, useState } from "react";
-import Post from "./Post";
+import Post from "../components/Post";
+import DefaultPosts from "../components/DefaultPosts";
 
 function Posts() {
-  const [postsState, setPosts] = useState([
-    { id: 1, title: "MIU", author: "Jalal" },
-    { id: 2, title: "Happiness", author: "Ahnaf" },
-    { id: 3, title: "Enjoy Life", author: "Bangladesh" },
-  ]);
+  const [postsState, setPosts] = useState(DefaultPosts);
 
   return (
     <div className="center">

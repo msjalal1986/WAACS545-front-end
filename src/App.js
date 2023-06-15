@@ -1,16 +1,16 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Posts from "./components/Posts";
+import { BrowserRouter } from "react-router-dom";
+import  DashBoard from './containers/DashBoard';
+import PageRoutes from "./containers/PageRoutes";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1 className="center">Dashboard</h1>
-        <div>
-          <Posts></Posts>
-        </div>
-      </header>
+    <BrowserRouter>
+    <DashBoard></DashBoard>
+          <PageRoutes></PageRoutes>
+      </BrowserRouter>
     </div>
   );
 }
